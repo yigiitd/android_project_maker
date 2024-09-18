@@ -32,22 +32,22 @@ def process_files(config: Config, file_configs: List[Tuple[str, str]]) -> None:
 
 def get_file_configs(templates_dir: str) -> List[Tuple[str, str]]:
     return [
-        (r"Api.kt",               os.path.join(templates_dir, "Api.kt.template")),
-        (r"Application.kt",       os.path.join(templates_dir, "Application.kt.template")),
-        (r"AppModule.kt",         os.path.join(templates_dir, "AppModule.kt.template")),
-        (r"Constants.kt",         os.path.join(templates_dir, "Constants.kt.template")),
-        (r"Dao.kt",               os.path.join(templates_dir, "Dao.kt.template")),
-        (r"Database.kt",          os.path.join(templates_dir, "Database.kt.template")),
-        (r"Event.kt",             os.path.join(templates_dir, "Event.kt.template")),
-        (r"MainActivity.kt",      os.path.join(templates_dir, "MainActivity.kt.template")),
-        (r"RepositoryModule.kt",  os.path.join(templates_dir, "RepositoryModule.kt.template")),
-        (r"Resource.kt",          os.path.join(templates_dir, "Resource.kt.template")),
-        (r"RetrofitModule.kt",    os.path.join(templates_dir, "RetrofitModule.kt.template")),
-        (r"RoomModule.kt",        os.path.join(templates_dir, "RoomModule.kt.template")),
-        (r"Screen.kt",            os.path.join(templates_dir, "Screen.kt.template")),
-        (r"ScreenUtils.kt",       os.path.join(templates_dir, "ScreenUtils.kt.template")),
-        (r"State.kt",             os.path.join(templates_dir, "State.kt.template")),
-        (r"ViewModel.kt",         os.path.join(templates_dir, "ViewModel.kt.template")),
+        (r"Api.kt",               os.path.join(templates_dir, "Api.kt")),
+        (r"Application.kt",       os.path.join(templates_dir, "Application.kt")),
+        (r"AppModule.kt",         os.path.join(templates_dir, "AppModule.kt")),
+        (r"Constants.kt",         os.path.join(templates_dir, "Constants.kt")),
+        (r"Dao.kt",               os.path.join(templates_dir, "Dao.kt")),
+        (r"Database.kt",          os.path.join(templates_dir, "Database.kt")),
+        (r"Event.kt",             os.path.join(templates_dir, "Event.kt")),
+        (r"MainActivity.kt",      os.path.join(templates_dir, "MainActivity.kt")),
+        (r"RepositoryModule.kt",  os.path.join(templates_dir, "RepositoryModule.kt")),
+        (r"Resource.kt",          os.path.join(templates_dir, "Resource.kt")),
+        (r"RetrofitModule.kt",    os.path.join(templates_dir, "RetrofitModule.kt")),
+        (r"RoomModule.kt",        os.path.join(templates_dir, "RoomModule.kt")),
+        (r"Screen.kt",            os.path.join(templates_dir, "Screen.kt")),
+        (r"ScreenUtils.kt",       os.path.join(templates_dir, "ScreenUtils.kt")),
+        (r"State.kt",             os.path.join(templates_dir, "State.kt")),
+        (r"ViewModel.kt",         os.path.join(templates_dir, "ViewModel.kt")),
     ]
 
 def get_config() -> Config:
