@@ -45,7 +45,7 @@ def get_file_configs(templates_dir: str) -> List[Tuple[str, str]]:
         (r"RetrofitModule.kt",    os.path.join(templates_dir, "RetrofitModule.kt")),
         (r"RoomModule.kt",        os.path.join(templates_dir, "RoomModule.kt")),
         (r"Screen.kt",            os.path.join(templates_dir, "Screen.kt")),
-        (r"ScreenUtils.kt",       os.path.join(templates_dir, "ScreenUtils.kt")),
+        (r"UiUtils.kt",           os.path.join(templates_dir, "UiUtils.kt")),
         (r"State.kt",             os.path.join(templates_dir, "State.kt")),
         (r"ViewModel.kt",         os.path.join(templates_dir, "ViewModel.kt")),
     ]
