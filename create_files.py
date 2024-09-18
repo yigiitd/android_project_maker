@@ -19,7 +19,8 @@ def create_file_structure(main_dir, structure, app_owner: str):
 
 def main():
     app_name = input("Enter the app name: ")
-    main_dir = "/Users/ahmetyigitdayi/Desktop/" + input("Enter the main directory path: ")
+    app_owner = input("Enter the app owner: ")
+    main_dir = input("Enter the main directory path: ")
 
     object_name = input("Enter the object name: ")
     repo_name = input("Enter the repository name: ")
@@ -75,7 +76,7 @@ def main():
         f"/{app_name}Application.kt",
     ])
 
-    create_file_structure(main_dir, structure)
+    create_file_structure(main_dir, structure, app_owner)
 
 if __name__ == "__main__":
     main()

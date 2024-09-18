@@ -51,7 +51,7 @@ def get_file_configs(templates_dir: str) -> List[Tuple[str, str]]:
     ]
 
 def get_config() -> Config:
-    path = os.path.join("/Users/ahmetyigitdayi/Desktop/", input("Enter the application path: "))
+    path = input("Enter the application path: ")
     templates_dir = os.path.join(os.path.dirname(__file__), "code_templates")
 
     if not os.path.exists(path):
