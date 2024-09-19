@@ -51,7 +51,11 @@ def get_file_configs(templates_dir: str) -> List[Tuple[str, str]]:
     ]
 
 def get_config() -> Config:
-    path = input("Enter the application path: ")
+    app_name = input("Enter the app name: ")
+    config_file = os.path.join(os.path.dirname(__file__), "config.txt")
+    projects_dir = open(config_file, "r").readline()
+    path = os.path.join(projects_dir, app_name)
+
     templates_dir = os.path.join(os.path.dirname(__file__), "code_templates")
 
     if not os.path.exists(path):

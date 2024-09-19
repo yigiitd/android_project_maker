@@ -3,9 +3,11 @@ import re
 
 def create_file_from_template(main_dir, file_name, templates_dir):
     template_path = os.path.join(templates_dir, file_name)
-    output_path = os.path.join(main_dir, file_name)
+    gradle_scripts_dir = os.path.join(main_dir, "gradle_scripts")
+    output_path = os.path.join(gradle_scripts_dir, file_name)
     
     try:
+        os.makedirs(gradle_scripts_dir, exist_ok=True)
         with open(template_path, 'r') as template_file, open(output_path, 'w') as output_file:
             output_file.write(template_file.read())
         print(f"Created: {output_path}")
@@ -37,7 +39,9 @@ def create_file_structure(main_dir, structure, app_owner: str):
 def main():
     app_name = input("Enter the app name: ")
     app_owner = input("Enter the app owner: ")
-    main_dir = input("Enter the main directory path: ")
+    config_file = os.path.join(os.path.dirname(__file__), "config.txt")
+    projects_dir = open(config_file, "r").readline()
+    main_dir = os.path.join(projects_dir, app_name)
 
     objects = input("Enter the object names: ").split(",")
     repos = input("Enter the repository names: ").split(",")

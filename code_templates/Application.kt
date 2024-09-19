@@ -2,4 +2,4 @@ import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class LivePoliceScannerApplication : Application()
+class Application : Application()
